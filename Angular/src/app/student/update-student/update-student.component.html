@@ -1,0 +1,31 @@
+
+<div [hidden]="submitted" style="width: 400px;">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">First Name</label>
+      <input type="text" class="form-control" id="firstName" required [(ngModel)]="student.fname" name="firstName">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Last Name</label>
+      <input type="text" class="form-control" id="lastName" required [(ngModel)]="student.lname" name="lastName">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Email Id</label>
+      <input type="email" class="form-control" id="emailId" required [(ngModel)]="student.email" name="emailId">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Mobile Number</label>
+      <input type="text" class="form-control" id="mobileNumber" required [(ngModel)]="student.phonenumber" name="mobileNumber">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Course Details</label>
+      <input type="text" class="form-control" id="courseDetails" required [(ngModel)]="student.coursedetails" name="courseDetails">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
